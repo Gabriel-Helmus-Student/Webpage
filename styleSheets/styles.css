@@ -148,4 +148,13 @@ button:disabled {
 :focus-visible {
   outline: 2px solid #7cb7ff;
   outline-offset: 3px;
+
+  /* Question Formatting */
+  .question {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #e6e6eb;
+}
+
 }

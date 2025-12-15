@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".//styleSheets/styles.css">
-    <title>Game Preference Survey 🎮</title>
+    <title>Game Preference Survey</title>
 </head>
 
 <body>
 
-<h1>🎮 Game Preference Survey</h1>
+<h1>Game Preference Survey</h1>
 <p>Answer the questions below. Your responses will be used later to find the perfect game.</p>
 
 <hr>
@@ -17,19 +17,25 @@
 <!-- Core Gameplay -->
 <h2>1. Core Gameplay Preferences</h2>
 
+<label for="action_speed" class="question">What pace do you enjoy most?</label>
 <select id="action_speed">
-    <option value="slow">Slow & thoughtful</option>
+    <option value="" disabled selected>Select one</option>
+    <option value="slow">Slow and thoughtful</option>
     <option value="medium">Moderate</option>
-    <option value="fast">Fast & intense</option>
+    <option value="fast">Fast and intense</option>
 </select>
 
+<label for="complexity" class="question">How challenging should the gameplay be?</label>
 <select id="complexity">
+    <option value="" disabled selected>Select one</option>
     <option value="easy">Relaxing</option>
     <option value="medium">Fair but demanding</option>
     <option value="hard">Brutally difficult</option>
 </select>
 
+<label for="skill_intensity" class="question">Do you enjoy mastering mechanics?</label>
 <select id="skill_intensity">
+    <option value="" disabled selected>Select one</option>
     <option value="low">Not really</option>
     <option value="medium">Somewhat</option>
     <option value="high">Absolutely</option>
@@ -38,41 +44,50 @@
 <hr>
 
 <!-- Genre -->
-<h2>2. Genre (Pick up to 2)</h2>
+<h2>2. Genre</h2>
 
-<label><input type="checkbox" class="genre" value="RPG"> RPG</label><br>
-<label><input type="checkbox" class="genre" value="FPS"> FPS</label><br>
-<label><input type="checkbox" class="genre" value="Strategy"> Strategy</label><br>
-<label><input type="checkbox" class="genre" value="Simulation"> Simulation</label><br>
-<label><input type="checkbox" class="genre" value="Platformer"> Platformer</label><br>
-<label><input type="checkbox" class="genre" value="Horror"> Horror</label><br>
-<label><input type="checkbox" class="genre" value="Sandbox"> Sandbox</label><br>
-
+<label class="question">Which sounds most appealing?</label>
 <select id="core_appeal">
+    <option value="" disabled selected>Select one</option>
     <option value="explore">Exploring a huge world</option>
     <option value="compete">Competing against others</option>
     <option value="puzzle">Solving puzzles</option>
-    <option value="story">Strong story</option>
+    <option value="story">Following a strong story</option>
 </select>
+
+<label class="question">Pick up to two genres you enjoy most:</label>
+<label><input type="checkbox" class="genre" value="RPG"> RPG</label>
+<label><input type="checkbox" class="genre" value="FPS"> FPS</label>
+<label><input type="checkbox" class="genre" value="Strategy"> Strategy</label>
+<label><input type="checkbox" class="genre" value="Simulation"> Simulation</label>
+<label><input type="checkbox" class="genre" value="Platformer"> Platformer</label>
+<label><input type="checkbox" class="genre" value="Horror"> Horror</label>
+<label><input type="checkbox" class="genre" value="Sandbox"> Sandbox</label>
 
 <hr>
 
 <!-- Story -->
 <h2>3. Story & Narrative</h2>
 
+<label for="story_importance" class="question">How important is story to you?</label>
 <select id="story_importance">
+    <option value="" disabled selected>Select one</option>
     <option value="low">Not important</option>
     <option value="medium">Nice to have</option>
     <option value="high">Essential</option>
 </select>
 
+<label for="narrative_style" class="question">What type of storytelling do you prefer?</label>
 <select id="narrative_style">
-    <option value="linear">Cinematic & linear</option>
+    <option value="" disabled selected>Select one</option>
+    <option value="linear">Cinematic and linear</option>
     <option value="choice">Choice-driven</option>
     <option value="environmental">Environmental / minimal</option>
 </select>
 
+<label for="lore" class="question">Do you like reading dialogue and lore?</label>
 <select id="lore">
+    <option value="" disabled selected>Select one</option>
     <option value="no">No</option>
     <option value="some">Sometimes</option>
     <option value="yes">Yes</option>
@@ -81,21 +96,27 @@
 <hr>
 
 <!-- Social -->
-<h2>4. Player Social Preference</h2>
+<h2>4. Player Social Preferences</h2>
 
+<label for="multiplayer_focus" class="question">How do you want to play?</label>
 <select id="multiplayer_focus">
+    <option value="" disabled selected>Select one</option>
     <option value="solo">Solo</option>
     <option value="coop">Co-op</option>
     <option value="competitive">Competitive multiplayer</option>
 </select>
 
+<label for="social_intensity" class="question">Playing with strangers is…</label>
 <select id="social_intensity">
+    <option value="" disabled selected>Select one</option>
     <option value="low">Not for me</option>
     <option value="medium">Okay sometimes</option>
     <option value="high">Great</option>
 </select>
 
+<label for="voice_chat" class="question">Do you use voice chat?</label>
 <select id="voice_chat">
+    <option value="" disabled selected>Select one</option>
     <option value="never">Never</option>
     <option value="sometimes">Occasionally</option>
     <option value="often">Often</option>
@@ -106,19 +127,25 @@
 <!-- Time -->
 <h2>5. Time Commitment</h2>
 
+<label for="session_length" class="question">Typical play session length?</label>
 <select id="session_length">
+    <option value="" disabled selected>Select one</option>
     <option value="short">15–30 minutes</option>
     <option value="medium">1–2 hours</option>
     <option value="long">Long sessions</option>
 </select>
 
+<label for="progression_depth" class="question">Do you like long-term progression?</label>
 <select id="progression_depth">
-    <option value="low">No progression</option>
+    <option value="" disabled selected>Select one</option>
+    <option value="low">No</option>
     <option value="medium">Some progression</option>
-    <option value="high">Deep systems</option>
+    <option value="high">Deep progression systems</option>
 </select>
 
+<label for="play_frequency" class="question">How often do you play games?</label>
 <select id="play_frequency">
+    <option value="" disabled selected>Select one</option>
     <option value="rare">Rarely</option>
     <option value="weekly">Weekly</option>
     <option value="daily">Daily</option>
@@ -129,19 +156,25 @@
 <!-- Aesthetic -->
 <h2>6. Aesthetic & Tone</h2>
 
+<label for="art_style" class="question">Preferred art style?</label>
 <select id="art_style">
+    <option value="" disabled selected>Select one</option>
     <option value="realistic">Realistic</option>
     <option value="stylized">Stylized</option>
     <option value="pixel">Pixel / Retro</option>
 </select>
 
+<label for="tone" class="question">What tone do you enjoy most?</label>
 <select id="tone">
+    <option value="" disabled selected>Select one</option>
     <option value="light">Lighthearted</option>
     <option value="serious">Serious</option>
     <option value="dark">Dark</option>
 </select>
 
+<label for="horror_tolerance" class="question">How do you feel about horror elements?</label>
 <select id="horror_tolerance">
+    <option value="" disabled selected>Select one</option>
     <option value="avoid">Avoid them</option>
     <option value="mild">Mildly enjoy</option>
     <option value="love">Love them</option>
@@ -152,14 +185,18 @@
 <!-- Motivation -->
 <h2>7. Player Motivation</h2>
 
+<label for="player_motivation" class="question">What keeps you playing a game?</label>
 <select id="player_motivation">
+    <option value="" disabled selected>Select one</option>
     <option value="achievements">Unlocking achievements</option>
     <option value="competition">Becoming better than others</option>
     <option value="immersion">Immersion in the world</option>
     <option value="creativity">Creativity and freedom</option>
 </select>
 
+<label for="satisfaction" class="question">Which is more satisfying?</label>
 <select id="satisfaction">
+    <option value="" disabled selected>Select one</option>
     <option value="winning">Winning</option>
     <option value="exploring">Exploring</option>
     <option value="creating">Creating</option>
@@ -171,19 +208,25 @@
 <!-- Creativity -->
 <h2>8. Creativity & Freedom</h2>
 
+<label for="creativity_level" class="question">How much freedom do you want?</label>
 <select id="creativity_level">
+    <option value="" disabled selected>Select one</option>
     <option value="structured">Very structured</option>
     <option value="medium">Some freedom</option>
     <option value="sandbox">Total sandbox</option>
 </select>
 
+<label for="building" class="question">Do you enjoy building or designing things?</label>
 <select id="building">
+    <option value="" disabled selected>Select one</option>
     <option value="no">No</option>
     <option value="some">A little</option>
     <option value="yes">Yes</option>
 </select>
 
+<label for="mods" class="question">Mods and custom content are…</label>
 <select id="mods">
+    <option value="" disabled selected>Select one</option>
     <option value="none">Unimportant</option>
     <option value="bonus">Nice bonus</option>
     <option value="essential">Essential</option>
@@ -192,18 +235,22 @@
 <hr>
 
 <!-- Tech -->
-<h2>9. Technical & Platform Constraints</h2>
+<h2>9. Platform & Hardware</h2>
 
+<label for="platform" class="question">What platform do you play on?</label>
 <select id="platform">
+    <option value="" disabled selected>Select one</option>
     <option value="pc">PC</option>
     <option value="console">Console</option>
     <option value="mobile">Mobile</option>
 </select>
 
+<label for="hardware_power" class="question">Your system can handle:</label>
 <select id="hardware_power">
+    <option value="" disabled selected>Select one</option>
     <option value="low">Indie games</option>
     <option value="medium">Most modern games</option>
-    <option value="high">High-end AAA</option>
+    <option value="high">High-end AAA games</option>
 </select>
 
 <hr>
@@ -211,19 +258,25 @@
 <!-- Personality -->
 <h2>10. Personality (Fun & Indirect)</h2>
 
+<label for="door_choice" class="question">You see a locked door in a game. You:</label>
 <select id="door_choice">
+    <option value="" disabled selected>Select one</option>
     <option value="key">Look for the key</option>
     <option value="break">Try to break it</option>
     <option value="glitch">Glitch through it</option>
 </select>
 
+<label for="failure" class="question">Failure makes you:</label>
 <select id="failure">
+    <option value="" disabled selected>Select one</option>
     <option value="quit">Quit</option>
     <option value="retry">Try again</option>
     <option value="persist">Try until you win</option>
 </select>
 
+<label for="appeal_style" class="question">Which appeals more?</label>
 <select id="appeal_style">
+    <option value="" disabled selected>Select one</option>
     <option value="strategy">Strategy</option>
     <option value="reflex">Reflexes</option>
     <option value="creativity">Creativity</option>
@@ -231,67 +284,7 @@
 
 <hr>
 
-<button onclick="collectResponses()">Save My Preferences</button>
-
-<script>
-function collectResponses() {
-    const preferred_genres = Array.from(
-        document.querySelectorAll(".genre:checked")
-    ).map(g => g.value);
-
-    const playerProfile = {
-        // Core Gameplay
-        action_speed: document.getElementById("action_speed").value,
-        complexity: document.getElementById("complexity").value,
-        skill_intensity: document.getElementById("skill_intensity").value,
-
-        // Genre
-        preferred_genres,
-        core_appeal: document.getElementById("core_appeal").value,
-
-        // Story
-        story_importance: document.getElementById("story_importance").value,
-        narrative_style: document.getElementById("narrative_style").value,
-        lore: document.getElementById("lore").value,
-
-        // Social
-        multiplayer_focus: document.getElementById("multiplayer_focus").value,
-        social_intensity: document.getElementById("social_intensity").value,
-        voice_chat: document.getElementById("voice_chat").value,
-
-        // Time
-        session_length: document.getElementById("session_length").value,
-        progression_depth: document.getElementById("progression_depth").value,
-        play_frequency: document.getElementById("play_frequency").value,
-
-        // Aesthetic
-        art_style: document.getElementById("art_style").value,
-        tone: document.getElementById("tone").value,
-        horror_tolerance: document.getElementById("horror_tolerance").value,
-
-        // Motivation
-        player_motivation: document.getElementById("player_motivation").value,
-        satisfaction: document.getElementById("satisfaction").value,
-
-        // Creativity
-        creativity_level: document.getElementById("creativity_level").value,
-        building: document.getElementById("building").value,
-        mods: document.getElementById("mods").value,
-
-        // Tech
-        platform: document.getElementById("platform").value,
-        hardware_power: document.getElementById("hardware_power").value,
-
-        // Personality
-        door_choice: document.getElementById("door_choice").value,
-        failure: document.getElementById("failure").value,
-        appeal_style: document.getElementById("appeal_style").value
-    };
-
-    console.log("Player Profile:", playerProfile);
-    alert("Preferences saved! (Check the console)");
-}
-</script>
+<button type="button">Save My Preferences</button>
 
 </body>
 </html>
