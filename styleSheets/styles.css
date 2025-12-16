@@ -11,13 +11,23 @@ body {
   color: #e6e6eb;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   line-height: 1.7;
-  padding: 32px 20px;
+
   max-width: 960px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 32px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   color: #7cb7ff;
   margin-top: 2rem;
@@ -34,17 +44,32 @@ h2 {
   font-size: 1.5rem;
   border-bottom: 1px solid #4a5168;
   padding-bottom: 6px;
+  text-align: center;
 }
 
-h3 { font-size: 1.25rem; }
-h4 { font-size: 1.1rem; }
-h5, h6 { font-size: 1rem; }
+h3 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+h5,
+h6 {
+  font-size: 1rem;
+  text-align: center;
+}
 
 /* Text & Paragraphs */
 p {
   margin-bottom: 1.25em;
   max-width: 75ch;
-  color: #c6c9d6;}
+  text-align: left;
+  color: #c6c9d6;
+}
 
 /* Links */
 a {
@@ -83,7 +108,8 @@ input[type="text"] {
   width: 100%;
   max-width: 420px;
   padding: 10px 12px;
-  margin: 8px 0 16px;
+  display: block;
+  margin: 8px auto 16px;
   background: #2a2f3e;
   color: #e6e6eb;
   border: 1px solid #444b5e;
@@ -104,11 +130,54 @@ button:focus {
   box-shadow: 0 0 0 2px rgba(124, 183, 255, 0.35);
 }
 
-/* Checkbox spacing */
-label {
+/* Question Formatting */
+.question {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #e6e6eb;
+  text-align: center;
+}
+
+/* Checkbox Layout & Styling */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 8px 16px;
+  justify-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 16px;
+}
+
+/* Individual checkbox label styling */
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
   cursor: pointer;
+  font-family: system-ui, sans-serif;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+label:hover {
+  background-color: #f3f4f6;
+}
+
+/* Checkbox accent color */
+input[type="checkbox"] {
+  accent-color: #4f46e5;
+}
+
+/* Center the last checkbox in the grid */
+label:last-child {
+  justify-content: center;
+  grid-column: span 2;
 }
 
 /* Buttons */
@@ -117,12 +186,13 @@ button {
   color: #0b1220;
   border: none;
   padding: 12px 28px;
+  display: block;
+  margin: 24px auto 0;
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 16px;
-  transition: 
+  transition:
     background-color 0.25s ease,
     transform 0.15s ease,
     box-shadow 0.15s ease;
@@ -148,13 +218,4 @@ button:disabled {
 :focus-visible {
   outline: 2px solid #7cb7ff;
   outline-offset: 3px;
-
-  /* Question Formatting */
-  .question {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 500;
-  color: #e6e6eb;
-}
-
 }

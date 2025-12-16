@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,282 +10,286 @@
 
 <body>
 
-<h1>Game Preference Survey</h1>
-<p>Answer the questions below. Your responses will be used later to find the perfect game.</p>
+    <h1>Game Preference Survey</h1>
+    <p>Answer the questions below. Your responses will be used later to find the perfect game.</p>
 
-<hr>
+    <hr>
 
-<!-- Core Gameplay -->
-<h2>1. Core Gameplay Preferences</h2>
+    <!-- Core Gameplay -->
+    <h2>1. Core Gameplay Preferences</h2>
 
-<label for="action_speed" class="question">What pace do you enjoy most?</label>
-<select id="action_speed">
-    <option value="" disabled selected>Select one</option>
-    <option value="slow">Slow and thoughtful</option>
-    <option value="medium">Moderate</option>
-    <option value="fast">Fast and intense</option>
-</select>
+    <p class="question">What pace do you enjoy most?</p>
+    <select id="action_speed">
+        <option value="" disabled selected>Select one</option>
+        <option value="slow">Slow and thoughtful</option>
+        <option value="medium">Moderate</option>
+        <option value="fast">Fast and intense</option>
+    </select>
 
-<label for="complexity" class="question">How challenging should the gameplay be?</label>
-<select id="complexity">
-    <option value="" disabled selected>Select one</option>
-    <option value="easy">Relaxing</option>
-    <option value="medium">Fair but demanding</option>
-    <option value="hard">Brutally difficult</option>
-</select>
+    <p class="question">How challenging should the gameplay be?</p>
+    <select id="complexity">
+        <option value="" disabled selected>Select one</option>
+        <option value="easy">Relaxing</option>
+        <option value="medium">Fair but demanding</option>
+        <option value="hard">Brutally difficult</option>
+    </select>
 
-<label for="skill_intensity" class="question">Do you enjoy mastering mechanics?</label>
-<select id="skill_intensity">
-    <option value="" disabled selected>Select one</option>
-    <option value="low">Not really</option>
-    <option value="medium">Somewhat</option>
-    <option value="high">Absolutely</option>
-</select>
+    <p class="question">Do you enjoy mastering mechanics?</p>
+    <select id="skill_intensity">
+        <option value="" disabled selected>Select one</option>
+        <option value="low">Not really</option>
+        <option value="medium">Somewhat</option>
+        <option value="high">Absolutely</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Genre -->
-<h2>2. Genre</h2>
+    <!-- Genre -->
+    <h2>2. Genre</h2>
 
-<label class="question">Which sounds most appealing?</label>
-<select id="core_appeal">
-    <option value="" disabled selected>Select one</option>
-    <option value="explore">Exploring a huge world</option>
-    <option value="compete">Competing against others</option>
-    <option value="puzzle">Solving puzzles</option>
-    <option value="story">Following a strong story</option>
-</select>
+    <p class="question">Which sounds most appealing?</p>
+    <select id="core_appeal">
+        <option value="" disabled selected>Select one</option>
+        <option value="explore">Exploring a huge world</option>
+        <option value="compete">Competing against others</option>
+        <option value="puzzle">Solving puzzles</option>
+        <option value="story">Following a strong story</option>
+    </select>
 
-<label class="question">Pick up to two genres you enjoy most:</label>
-<label><input type="checkbox" class="genre" value="RPG"> RPG</label>
-<label><input type="checkbox" class="genre" value="FPS"> FPS</label>
-<label><input type="checkbox" class="genre" value="Strategy"> Strategy</label>
-<label><input type="checkbox" class="genre" value="Simulation"> Simulation</label>
-<label><input type="checkbox" class="genre" value="Platformer"> Platformer</label>
-<label><input type="checkbox" class="genre" value="Horror"> Horror</label>
-<label><input type="checkbox" class="genre" value="Sandbox"> Sandbox</label>
+    <div class="checkbox-group">
+        <p class="question">Pick up to two genres you enjoy most:</p>
+        <br>
+        <label><input type="checkbox" class="genre" value="RPG"> RPG</label>
+        <label><input type="checkbox" class="genre" value="FPS"> FPS</label>
+        <label><input type="checkbox" class="genre" value="Strategy"> Strategy</label>
+        <label><input type="checkbox" class="genre" value="Simulation"> Simulation</label>
+        <label><input type="checkbox" class="genre" value="Platformer"> Platformer</label>
+        <label><input type="checkbox" class="genre" value="Horror"> Horror</label>
+        <label><input type="checkbox" class="genre" value="Sandbox"> Sandbox</label>
+    </div>
 
-<hr>
+    <hr>
 
-<!-- Story -->
-<h2>3. Story & Narrative</h2>
+    <!-- Story -->
+    <h2>3. Story & Narrative</h2>
 
-<label for="story_importance" class="question">How important is story to you?</label>
-<select id="story_importance">
-    <option value="" disabled selected>Select one</option>
-    <option value="low">Not important</option>
-    <option value="medium">Nice to have</option>
-    <option value="high">Essential</option>
-</select>
+    <p class="question">How important is story to you?</p>
+    <select id="story_importance">
+        <option value="" disabled selected>Select one</option>
+        <option value="low">Not important</option>
+        <option value="medium">Nice to have</option>
+        <option value="high">Essential</option>
+    </select>
 
-<label for="narrative_style" class="question">What type of storytelling do you prefer?</label>
-<select id="narrative_style">
-    <option value="" disabled selected>Select one</option>
-    <option value="linear">Cinematic and linear</option>
-    <option value="choice">Choice-driven</option>
-    <option value="environmental">Environmental / minimal</option>
-</select>
+    <p class="question">What type of storytelling do you prefer?</p>
+    <select id="narrative_style">
+        <option value="" disabled selected>Select one</option>
+        <option value="linear">Cinematic and linear</option>
+        <option value="choice">Choice-driven</option>
+        <option value="environmental">Environmental / minimal</option>
+    </select>
 
-<label for="lore" class="question">Do you like reading dialogue and lore?</label>
-<select id="lore">
-    <option value="" disabled selected>Select one</option>
-    <option value="no">No</option>
-    <option value="some">Sometimes</option>
-    <option value="yes">Yes</option>
-</select>
+    <p class="question">Do you like reading dialogue and lore?</p>
+    <select id="lore">
+        <option value="" disabled selected>Select one</option>
+        <option value="no">No</option>
+        <option value="some">Sometimes</option>
+        <option value="yes">Yes</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Social -->
-<h2>4. Player Social Preferences</h2>
+    <!-- Social -->
+    <h2>4. Player Social Preferences</h2>
 
-<label for="multiplayer_focus" class="question">How do you want to play?</label>
-<select id="multiplayer_focus">
-    <option value="" disabled selected>Select one</option>
-    <option value="solo">Solo</option>
-    <option value="coop">Co-op</option>
-    <option value="competitive">Competitive multiplayer</option>
-</select>
+    <p class="question">How do you want to play?</p>
+    <select id="multiplayer_focus">
+        <option value="" disabled selected>Select one</option>
+        <option value="solo">Solo</option>
+        <option value="coop">Co-op</option>
+        <option value="competitive">Competitive multiplayer</option>
+    </select>
 
-<label for="social_intensity" class="question">Playing with strangers is…</label>
-<select id="social_intensity">
-    <option value="" disabled selected>Select one</option>
-    <option value="low">Not for me</option>
-    <option value="medium">Okay sometimes</option>
-    <option value="high">Great</option>
-</select>
+    <p class="question">Playing with strangers is…</p>
+    <select id="social_intensity">
+        <option value="" disabled selected>Select one</option>
+        <option value="low">Not for me</option>
+        <option value="medium">Okay sometimes</option>
+        <option value="high">Great</option>
+    </select>
 
-<label for="voice_chat" class="question">Do you use voice chat?</label>
-<select id="voice_chat">
-    <option value="" disabled selected>Select one</option>
-    <option value="never">Never</option>
-    <option value="sometimes">Occasionally</option>
-    <option value="often">Often</option>
-</select>
+    <p class="question">Do you use voice chat?</p>
+    <select id="voice_chat">
+        <option value="" disabled selected>Select one</option>
+        <option value="never">Never</option>
+        <option value="sometimes">Occasionally</option>
+        <option value="often">Often</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Time -->
-<h2>5. Time Commitment</h2>
+    <!-- Time -->
+    <h2>5. Time Commitment</h2>
 
-<label for="session_length" class="question">Typical play session length?</label>
-<select id="session_length">
-    <option value="" disabled selected>Select one</option>
-    <option value="short">15–30 minutes</option>
-    <option value="medium">1–2 hours</option>
-    <option value="long">Long sessions</option>
-</select>
+    <p class="question">Typical play session length?</p>
+    <select id="session_length">
+        <option value="" disabled selected>Select one</option>
+        <option value="short">15–30 minutes</option>
+        <option value="medium">1–2 hours</option>
+        <option value="long">Long sessions</option>
+    </select>
 
-<label for="progression_depth" class="question">Do you like long-term progression?</label>
-<select id="progression_depth">
-    <option value="" disabled selected>Select one</option>
-    <option value="low">No</option>
-    <option value="medium">Some progression</option>
-    <option value="high">Deep progression systems</option>
-</select>
+    <p class="question">Do you like long-term progression?</p>
+    <select id="progression_depth">
+        <option value="" disabled selected>Select one</option>
+        <option value="low">No</option>
+        <option value="medium">Some progression</option>
+        <option value="high">Deep progression systems</option>
+    </select>
 
-<label for="play_frequency" class="question">How often do you play games?</label>
-<select id="play_frequency">
-    <option value="" disabled selected>Select one</option>
-    <option value="rare">Rarely</option>
-    <option value="weekly">Weekly</option>
-    <option value="daily">Daily</option>
-</select>
+    <p class="question">How often do you play games?</p>
+    <select id="play_frequency">
+        <option value="" disabled selected>Select one</option>
+        <option value="rare">Rarely</option>
+        <option value="weekly">Weekly</option>
+        <option value="daily">Daily</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Aesthetic -->
-<h2>6. Aesthetic & Tone</h2>
+    <!-- Aesthetic -->
+    <h2>6. Aesthetic & Tone</h2>
 
-<label for="art_style" class="question">Preferred art style?</label>
-<select id="art_style">
-    <option value="" disabled selected>Select one</option>
-    <option value="realistic">Realistic</option>
-    <option value="stylized">Stylized</option>
-    <option value="pixel">Pixel / Retro</option>
-</select>
+    <p class="question">Preferred art style?</p>
+    <select id="art_style">
+        <option value="" disabled selected>Select one</option>
+        <option value="realistic">Realistic</option>
+        <option value="stylized">Stylized</option>
+        <option value="pixel">Pixel / Retro</option>
+    </select>
 
-<label for="tone" class="question">What tone do you enjoy most?</label>
-<select id="tone">
-    <option value="" disabled selected>Select one</option>
-    <option value="light">Lighthearted</option>
-    <option value="serious">Serious</option>
-    <option value="dark">Dark</option>
-</select>
+    <p class="question">What tone do you enjoy most?</p>
+    <select id="tone">
+        <option value="" disabled selected>Select one</option>
+        <option value="light">Lighthearted</option>
+        <option value="serious">Serious</option>
+        <option value="dark">Dark</option>
+    </select>
 
-<label for="horror_tolerance" class="question">How do you feel about horror elements?</label>
-<select id="horror_tolerance">
-    <option value="" disabled selected>Select one</option>
-    <option value="avoid">Avoid them</option>
-    <option value="mild">Mildly enjoy</option>
-    <option value="love">Love them</option>
-</select>
+    <p class="question">How do you feel about horror elements?</p>
+    <select id="horror_tolerance">
+        <option value="" disabled selected>Select one</option>
+        <option value="avoid">Avoid them</option>
+        <option value="mild">Mildly enjoy</option>
+        <option value="love">Love them</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Motivation -->
-<h2>7. Player Motivation</h2>
+    <!-- Motivation -->
+    <h2>7. Player Motivation</h2>
 
-<label for="player_motivation" class="question">What keeps you playing a game?</label>
-<select id="player_motivation">
-    <option value="" disabled selected>Select one</option>
-    <option value="achievements">Unlocking achievements</option>
-    <option value="competition">Becoming better than others</option>
-    <option value="immersion">Immersion in the world</option>
-    <option value="creativity">Creativity and freedom</option>
-</select>
+    <p class="question">What keeps you playing a game?</p>
+    <select id="player_motivation">
+        <option value="" disabled selected>Select one</option>
+        <option value="achievements">Unlocking achievements</option>
+        <option value="competition">Becoming better than others</option>
+        <option value="immersion">Immersion in the world</option>
+        <option value="creativity">Creativity and freedom</option>
+    </select>
 
-<label for="satisfaction" class="question">Which is more satisfying?</label>
-<select id="satisfaction">
-    <option value="" disabled selected>Select one</option>
-    <option value="winning">Winning</option>
-    <option value="exploring">Exploring</option>
-    <option value="creating">Creating</option>
-    <option value="story">Story moments</option>
-</select>
+    <p class="question">Which is more satisfying?</p>
+    <select id="satisfaction">
+        <option value="" disabled selected>Select one</option>
+        <option value="winning">Winning</option>
+        <option value="exploring">Exploring</option>
+        <option value="creating">Creating</option>
+        <option value="story">Story moments</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Creativity -->
-<h2>8. Creativity & Freedom</h2>
+    <!-- Creativity -->
+    <h2>8. Creativity & Freedom</h2>
 
-<label for="creativity_level" class="question">How much freedom do you want?</label>
-<select id="creativity_level">
-    <option value="" disabled selected>Select one</option>
-    <option value="structured">Very structured</option>
-    <option value="medium">Some freedom</option>
-    <option value="sandbox">Total sandbox</option>
-</select>
+    <p class="question">How much freedom do you want?</p>
+    <select id="creativity_level">
+        <option value="" disabled selected>Select one</option>
+        <option value="structured">Very structured</option>
+        <option value="medium">Some freedom</option>
+        <option value="sandbox">Total sandbox</option>
+    </select>
 
-<label for="building" class="question">Do you enjoy building or designing things?</label>
-<select id="building">
-    <option value="" disabled selected>Select one</option>
-    <option value="no">No</option>
-    <option value="some">A little</option>
-    <option value="yes">Yes</option>
-</select>
+    <p class="question">Do you enjoy building or designing things?</p>
+    <select id="building">
+        <option value="" disabled selected>Select one</option>
+        <option value="no">No</option>
+        <option value="some">A little</option>
+        <option value="yes">Yes</option>
+    </select>
 
-<label for="mods" class="question">Mods and custom content are…</label>
-<select id="mods">
-    <option value="" disabled selected>Select one</option>
-    <option value="none">Unimportant</option>
-    <option value="bonus">Nice bonus</option>
-    <option value="essential">Essential</option>
-</select>
+    <p class="question">Mods and custom content are…</p>
+    <select id="mods">
+        <option value="" disabled selected>Select one</option>
+        <option value="none">Unimportant</option>
+        <option value="bonus">Nice bonus</option>
+        <option value="essential">Essential</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Tech -->
-<h2>9. Platform & Hardware</h2>
+    <!-- Tech -->
+    <h2>9. Platform & Hardware</h2>
 
-<label for="platform" class="question">What platform do you play on?</label>
-<select id="platform">
-    <option value="" disabled selected>Select one</option>
-    <option value="pc">PC</option>
-    <option value="console">Console</option>
-    <option value="mobile">Mobile</option>
-</select>
+    <p class="question">What platform do you play on?</p>
+    <select id="platform">
+        <option value="" disabled selected>Select one</option>
+        <option value="pc">PC</option>
+        <option value="console">Console</option>
+        <option value="mobile">Mobile</option>
+    </select>
 
-<label for="hardware_power" class="question">Your system can handle:</label>
-<select id="hardware_power">
-    <option value="" disabled selected>Select one</option>
-    <option value="low">Indie games</option>
-    <option value="medium">Most modern games</option>
-    <option value="high">High-end AAA games</option>
-</select>
+    <p class="question">Your system can handle:</p>
+    <select id="hardware_power">
+        <option value="" disabled selected>Select one</option>
+        <option value="low">Indie games</option>
+        <option value="medium">Most modern games</option>
+        <option value="high">High-end AAA games</option>
+    </select>
 
-<hr>
+    <hr>
 
-<!-- Personality -->
-<h2>10. Personality (Fun & Indirect)</h2>
+    <!-- Personality -->
+    <h2>10. Personality (Fun & Unimpactful)</h2>
 
-<label for="door_choice" class="question">You see a locked door in a game. You:</label>
-<select id="door_choice">
-    <option value="" disabled selected>Select one</option>
-    <option value="key">Look for the key</option>
-    <option value="break">Try to break it</option>
-    <option value="glitch">Glitch through it</option>
-</select>
+    <p class="question">You see a locked door in a game. You:</p>
+    <select id="door_choice">
+        <option value="" disabled selected>Select one</option>
+        <option value="key">Look for the key</option>
+        <option value="break">Try to break it</option>
+        <option value="glitch">Glitch through it</option>
+    </select>
 
-<label for="failure" class="question">Failure makes you:</label>
-<select id="failure">
-    <option value="" disabled selected>Select one</option>
-    <option value="quit">Quit</option>
-    <option value="retry">Try again</option>
-    <option value="persist">Try until you win</option>
-</select>
+    <p class="question">Failure makes you:</p>
+    <select id="failure">
+        <option value="" disabled selected>Select one</option>
+        <option value="quit">Quit</option>
+        <option value="retry">Try again</option>
+        <option value="persist">Try until you win</option>
+    </select>
 
-<label for="appeal_style" class="question">Which appeals more?</label>
-<select id="appeal_style">
-    <option value="" disabled selected>Select one</option>
-    <option value="strategy">Strategy</option>
-    <option value="reflex">Reflexes</option>
-    <option value="creativity">Creativity</option>
-</select>
+    <p class="question">Which appeals more?</p>
+    <select id="appeal_style">
+        <option value="" disabled selected>Select one</option>
+        <option value="strategy">Strategy</option>
+        <option value="reflex">Reflexes</option>
+        <option value="creativity">Creativity</option>
+    </select>
 
-<hr>
+    <hr>
 
-<button type="button">Save My Preferences</button>
+    <button type="button">Find my Game</button>
 
 </body>
+
 </html>
