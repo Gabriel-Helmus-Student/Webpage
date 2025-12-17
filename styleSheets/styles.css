@@ -175,12 +175,6 @@ input[type="checkbox"] {
   accent-color: #4f46e5;
 }
 
-/* Center the last checkbox in the grid */
-label:last-child {
-  justify-content: center;
-  grid-column: span 2;
-}
-
 /* Buttons */
 button {
   background-color: #7cb7ff;
